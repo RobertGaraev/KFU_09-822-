@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutorsAndBooks>
+    <!-- Тег Autor с атрибутом name и двумя элементами -->
+    <Autor Автор="Пушкин А.С.">
+        <books_pages книга="Руслан и Людмила" страницы="150" />
+        <books_pages книга="казка о рыбаке и рыбке" страницы="25" />
+    </Autor>
+    <Autor Автор="Толстой Л.Н.">
+        <books_pages книга="Война и мир" страницы="1000" />
+    </Autor>
+</AutorsAndBooks>
