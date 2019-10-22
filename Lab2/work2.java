@@ -72,15 +72,15 @@ public class work2 {
     }
 
     static void first(int chislo) {
-        System.out.println("решение стеком");
+        System.out.println("Г°ГҐГёГҐГ­ГЁГҐ Г±ГІГҐГЄГ®Г¬");
         Stack(chislo);
-        System.out.println("решение очередью");
+        System.out.println("Г°ГҐГёГҐГ­ГЁГҐ Г®Г·ГҐГ°ГҐГ¤ГјГѕ");
         Ochered(chislo);
     }
 
     static void second_Stack(){
         try {
-            BufferedReader file = new BufferedReader( new FileReader("ФИО2.txt"));
+            BufferedReader file = new BufferedReader( new FileReader("Г”Г€ГЋ2.txt"));
             String line;
             int k = 0;
             FirstClass_work2[] information = new FirstClass_work2[5];
@@ -106,7 +106,7 @@ public class work2 {
 
     static void second_Ochered(){
         try {
-            BufferedReader file = new BufferedReader( new FileReader("ФИО2.txt"));
+            BufferedReader file = new BufferedReader( new FileReader("Г”Г€ГЋ2.txt"));
             String line;
             int k = 0;
             FirstClass_work2[] information = new FirstClass_work2[5];
@@ -145,7 +145,7 @@ public class work2 {
 
     static void balans(){
         Scanner a = new Scanner(System.in);
-        System.out.println("введите математическое выражение");
+        System.out.println("ГўГўГҐГ¤ГЁГІГҐ Г¬Г ГІГҐГ¬Г ГІГЁГ·ГҐГ±ГЄГ®ГҐ ГўГ»Г°Г Г¦ГҐГ­ГЁГҐ");
         String line = a.nextLine();
         Stack<Character> stack = new Stack<>();
         boolean t = false;
@@ -162,8 +162,8 @@ public class work2 {
             t=true;
         }
         if (!stack.empty())t=false;
-        if (t) System.out.println("Баланс скобок введенного математического выражения не нарушен");
-        else System.out.println("Баланс скобок введенного математического выражения нарушен");
+        if (t) System.out.println("ГЃГ Г«Г Г­Г± Г±ГЄГ®ГЎГ®ГЄ ГўГўГҐГ¤ГҐГ­Г­Г®ГЈГ® Г¬Г ГІГҐГ¬Г ГІГЁГ·ГҐГ±ГЄГ®ГЈГ® ГўГ»Г°Г Г¦ГҐГ­ГЁГї Г­ГҐ Г­Г Г°ГіГёГҐГ­");
+        else System.out.println("ГЃГ Г«Г Г­Г± Г±ГЄГ®ГЎГ®ГЄ ГўГўГҐГ¤ГҐГ­Г­Г®ГЈГ® Г¬Г ГІГҐГ¬Г ГІГЁГ·ГҐГ±ГЄГ®ГЈГ® ГўГ»Г°Г Г¦ГҐГ­ГЁГї Г­Г Г°ГіГёГҐГ­");
     }
 
     static void formula(){
