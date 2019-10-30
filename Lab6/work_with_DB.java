@@ -12,21 +12,21 @@ public class work_with_DB {
         try {
             Scanner scanner = new Scanner(System.in);
             String a,b,c,d,e,f;
-            conection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/users", "postgres", "flatron147");
-            Insert_new_information("ООО Шуба", "Russia", "Cheboksary", "ул.Петрова, д.4", "237-89-08", "mex@mail.ru");
+            conection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/users", "postgres", "12345");
+            Insert_new_information("ГЋГЋГЋ ГГіГЎГ ", "Russia", "Cheboksary", "ГіГ«.ГЏГҐГІГ°Г®ГўГ , Г¤.4", "237-89-08", "mex@mail.ru");
             out_table();
             System.out.println(table);
-            System.out.print("пожалуйста введите следующие данные:\n" + "Имя:");
+            System.out.print("ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ  ГўГўГҐГ¤ГЁГІГҐ Г±Г«ГҐГ¤ГіГѕГ№ГЁГҐ Г¤Г Г­Г­Г»ГҐ:\n" + "Г€Г¬Гї:");
             a=scanner.nextLine();
-            System.out.print("\nСтрана:");
+            System.out.print("\nГ‘ГІГ°Г Г­Г :");
             b=scanner.nextLine();
-            System.out.print("\nГород:");
+            System.out.print("\nГѓГ®Г°Г®Г¤:");
             c=scanner.nextLine();
-            System.out.print("\nАдрес:");
+            System.out.print("\nГЂГ¤Г°ГҐГ±:");
             d=scanner.nextLine();
-            System.out.print("\nТелефон:");
+            System.out.print("\nГ’ГҐГ«ГҐГґГ®Г­:");
             e=scanner.nextLine();
-            System.out.println("\nЭлектронная почта:");
+            System.out.println("\nГќГ«ГҐГЄГІГ°Г®Г­Г­Г Гї ГЇГ®Г·ГІГ :");
             f=scanner.nextLine();
             Insert_new_information(a, b, c, d, e, f);
             out_table();
@@ -48,14 +48,14 @@ public class work_with_DB {
 
     public static void change() throws SQLException {
         stmt = conection.createStatement();
-        table="UPDATE users SET Имя = 'Институт ядерных технологий', Телефон = '511-11-11' WHERE Код_клиента = 4";
+        table="UPDATE users SET Г€Г¬Гї = 'Г€Г­Г±ГІГЁГІГіГІ ГїГ¤ГҐГ°Г­Г»Гµ ГІГҐГµГ­Г®Г«Г®ГЈГЁГ©', Г’ГҐГ«ГҐГґГ®Г­ = '511-11-11' WHERE ГЉГ®Г¤_ГЄГ«ГЁГҐГ­ГІГ  = 4";
         stmt.executeUpdate(table);
         stmt.close();
     }
 
     public static void delete() throws SQLException {
         stmt = conection.createStatement();
-        table="DELETE FROM users WHERE Имя='Левачев Н.Н.'";
+        table="DELETE FROM users WHERE Г€Г¬Гї='Г‹ГҐГўГ Г·ГҐГў ГЌ.ГЌ.'";
         stmt.executeUpdate(table);
         stmt.close();
     }
@@ -65,8 +65,8 @@ public class work_with_DB {
        table="SELECT * FROM users";
         ResultSet resultSet = stmt.executeQuery(table);
         while (resultSet.next()) {
-            System.out.println(resultSet.getInt("Код_клиента") + " " + resultSet.getString("Имя") + resultSet.getString("Страна") + resultSet.getString("Город")
-                    + resultSet.getString("Адрес") + resultSet.getString("Телефон") + resultSet.getString("Электронная_почта"));
+            System.out.println(resultSet.getInt("ГЉГ®Г¤_ГЄГ«ГЁГҐГ­ГІГ ") + " " + resultSet.getString("Г€Г¬Гї") + resultSet.getString("Г‘ГІГ°Г Г­Г ") + resultSet.getString("ГѓГ®Г°Г®Г¤")
+                    + resultSet.getString("ГЂГ¤Г°ГҐГ±") + resultSet.getString("Г’ГҐГ«ГҐГґГ®Г­") + resultSet.getString("ГќГ«ГҐГЄГІГ°Г®Г­Г­Г Гї_ГЇГ®Г·ГІГ "));
         }
         stmt.close();
     }
