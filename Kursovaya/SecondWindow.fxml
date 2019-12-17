@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Winow1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1e1a33; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kursovaya.SecondWindowController">
+   <children>
+      <Label fx:id="avtorLabel" layoutX="210.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="52.0" prefWidth="180.0" text="Регистрация" textFill="WHITE">
+         <font>
+            <Font name="Century" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Name" blendMode="SRC_ATOP" layoutX="14.0" layoutY="63.0" promptText="Имя" style="-fx-background-color: #ffffff; -fx-background-radius: 8;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="LastName" blendMode="SRC_ATOP" layoutX="14.0" layoutY="110.0" promptText="Фамилия" style="-fx-background-color: #ffffff; -fx-background-radius: 8;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="W2_error3" layoutX="95.0" layoutY="268.0" prefHeight="42.0" prefWidth="399.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="country" blendMode="SRC_ATOP" layoutX="390.0" layoutY="63.0" promptText="страна" style="-fx-background-color: #ffffff; -fx-background-radius: 8;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phone" blendMode="SRC_ATOP" layoutX="390.0" layoutY="110.0" promptText="телефон" style="-fx-background-color: #ffffff; -fx-background-radius: 8;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="loginField" blendMode="SRC_ATOP" layoutX="201.0" layoutY="178.0" promptText="логин" style="-fx-background-color: #ffffff; -fx-background-radius: 8;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="Password" layoutX="201.0" layoutY="230.0" prefHeight="25.0" prefWidth="187.0" promptText="пароль" style="-fx-background-radius: 8; -fx-background-color: #ffffff;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="enterButton" layoutX="195.0" layoutY="322.0" mnemonicParsing="false" onAction="#Enter" prefHeight="35.0" prefWidth="201.0" style="-fx-background-color: #000000; -fx-background-radius: 30;" text="зарегистрироваться" textFill="WHITE" >
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutY="-3.0" mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="152.0" style="-fx-background-color: #565657;" text="назад" textFill="WHITE">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="128.0" fitWidth="187.0" layoutX="231.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@картинки/iconfinder_user_people_person_users_man_5340287.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="W2_error1" layoutX="394.0" layoutY="178.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="193.0" textFill="RED">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="W2_error2" layoutX="394.0" layoutY="227.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="193.0" textFill="RED">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kursovaya.TableController">
+   <children>
+      <TableView fx:id="table" prefHeight="618.0" prefWidth="610.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="date_id" prefWidth="110.0" text="DATE" />
+          <TableColumn fx:id="open_id" prefWidth="100.0" text="OPEN" />
+            <TableColumn fx:id="hide_id" prefWidth="100.0" text="HIGH" />
+            <TableColumn fx:id="low_id" prefWidth="100.0" text="LOW" />
+            <TableColumn fx:id="close_id" prefWidth="100.0" text="CLOSE" />
+            <TableColumn fx:id="currency_id" prefWidth="100.0" text="CURRENCY" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
